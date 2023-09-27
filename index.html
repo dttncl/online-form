@@ -7,46 +7,51 @@
     <title>PageTurner Sign Up</title>
 </head>
 <body>
-    <div class="sidePhoto">
-
-    </div>
-
-    <div class="container">
-        <div>
-            <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.<br>
-            Sign up <em>now</em> to get strated.</p>
-            <p>You know you want to.</p>
+    <div class="wrapper">
+        <div class="sidePhoto">
+            <p>PageTurner</p>
+            <img src="./images/side2.png" alt="">
         </div>
-        <div>
-            <form>
-                <div>
-                    <label for="first_name">FIRST NAME</label>
-                    <input type="text" name="first_name" id="first_name" required>
-                    
-                    <label for="e_mail">EMAIL</label>
-                    <input type="email" name="e_mail" id="e_mail">
-                
-                    
-                    <label for="pword">PASSWORD</label>
-                    <input type="password" name="pword" id="pword" required>
-                </div>
-
-                <div>
-                    <label for="last_name">LAST NAME</label>
-                    <input type="text" name="last_name" id="last_name">
     
-                    <label for="phone">PHONE NUMBER</label>
-                    <input type="tel" name="phone" id="phone">
+        <div class="container">
+            <div class="cap">
+                <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.<br>
+                Sign up <em>now</em> to get strated.</p>
+                <p>You know you want to.</p>
+            </div>
+            <div>
+                <form action="#" method="post" id="signForm">
+                    <div class="col1">
+                        <label for="first_name">FIRST NAME</label><br>
+                        <input type="text" name="first_name" id="first_name" required><br>
+                        
+                        <label for="e_mail">EMAIL</label><br>
+                        <input type="email" name="e_mail" id="e_mail"><br>
+                    
+                        <label for="pword">PASSWORD</label><br>
+                        <input type="password" name="pword" id="pword" required>
+                    </div>
     
-                    <label for="c_pword">CONFIRM PASSWORD</label>
-                    <input type="password" name="c_pword" id="c_pword" required>
-                </div>
-                <button type="submit">Create Account</button>
-                <p>Already have an account? <a href="#">Log in</a></p>
-            </form>
+                    <div class="col2">
+                        <label for="last_name">LAST NAME</label><br>
+                        <input type="text" name="last_name" id="last_name"><br>
+        
+                        <label for="phone">PHONE NUMBER</label><br>
+                        <input type="tel" name="phone" id="phone"><br>
+        
+                        <label for="c_pword">CONFIRM PASSWORD</label><br>
+                        <input type="password" name="c_pword" id="c_pword" required>
+                    </div>
+    
+                    <div class="confirm">
+                        <button type="submit">CREATE ACCOUNT</button>
+                        <p>Already have an account? <a href="#">Log in</a></p>
+                    </div>
+    
+                </form>
+            </div>
         </div>
     </div>
-
     <footer>
         <p>
             Copyright &copy; 2023 <a href="https://github.com/dttncl">dttncl <img src="./images/github-mark.png"></a> 

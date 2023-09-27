@@ -1,19 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan&family=Roboto:wght@300;400&display=swap');
+
+/*
 body {
+    height: 98vh;
     display: grid;
-    grid-template-columns: repeat(2,1fr);
-    grid-template-rows: 1fr 10px;
-    grid-template-areas: "photo form"
-                        "footer";
+    grid-template-columns: 49vw 50vw;
+    grid-template-areas: "photo form";
+    font-family: 'Roboto', sans-serif;
+    font-size: 10px;
+    background-color: #ffecda;
+}
+*/
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 10px;
+    background-color: #ffecda;
 }
 
-.sidePhoto {
-    grid-area: photo;
+a {
+    text-decoration: none;
+    color: #fe2d4a;
+}
+
+.wrapper {
+    display: flex;
+    margin:auto;
+    width: 90vw;
+    height: 80vh;
 }
 
 .container {
-    grid-area: form;
+    font-size: 0.9rem;
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*
+.sidePhoto {
+    width: 49vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: 'League Spartan', sans-serif;
+    flex-direction: column;
+}
+*/
+
+.sidePhoto {
+    width: 49vw;
+    font-family: 'League Spartan', sans-serif;
+    text-align: center;
+}
+
+.sidePhoto > p {
+    font-size: 50px;
+    font-weight: bold;
+    
+}
+
+.sidePhoto > img {
+    width: 60%;
+    height: auto;
+    
+}
+
+.cap {
+    font-size: 1.2rem;
+}
+
+label {
+    font-weight: bold;
+    color: #2063f7;
 }
 
 footer {
-    grid-area: footer;
+    position: absolute;
+    bottom: 0;
+    width: 99%;
+    text-align: center;
+    font-size: 15px;
+}
+
+input {
+    border: 2px solid #2063f7;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+
+footer img {
+    width: 20px;
+    height: 20px;
+}
+
+.container {
+    display: block;
+}
+
+#signForm {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2, 0.5fr);
+    grid-template-areas:"sign1 sign2 "
+                        "submit submit";
+}
+
+.container > div {
+    padding: 20px;
+}
+
+input {
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px;
+    width: 180px;
+    cursor: pointer;
+    font-weight: bold;
+    border: 2px solid #2063f7;
+    background-color: #2063f7;
+    color: white;
+    border-radius: 10px;
+}
+
+button:hover {
+    background-color: #fe2d4a;
+    border: 2px solid #fe2d4a;
+    color: white;
+}
+
+.col1 {
+    grid-area: "sign1";
+}
+
+.col2 {
+    grid-area: "sign2";
+}
+
+.confirm {
+    grid-area: submit;
 }
