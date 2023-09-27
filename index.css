@@ -1,0 +1,19 @@
+body {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 1fr 10px;
+    grid-template-areas: "photo form"
+                        "footer";
+}
+
+.sidePhoto {
+    grid-area: photo;
+}
+
+.container {
+    grid-area: form;
+}
+
+footer {
+    grid-area: footer;
+}
