@@ -23,6 +23,10 @@ a {
     color: #fe2d4a;
 }
 
+a:hover {
+    text-decoration: underline;
+}
+
 .wrapper {
     display: flex;
     margin:auto;
@@ -38,18 +42,6 @@ a {
     align-items: center;
 }
 
-/*
-.sidePhoto {
-    width: 49vw;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    align-items: center;
-    font-family: 'League Spartan', sans-serif;
-    flex-direction: column;
-}
-*/
-
 .sidePhoto {
     width: 49vw;
     font-family: 'League Spartan', sans-serif;
@@ -63,13 +55,14 @@ a {
 }
 
 .sidePhoto > img {
-    width: 60%;
+    width: 70%;
     height: auto;
     
 }
 
 .cap {
     font-size: 1.2rem;
+
 }
 
 label {
@@ -117,12 +110,17 @@ input {
     margin-bottom: 20px;
 }
 
+input:focus {
+    outline: 3px solid #fe2d4a;
+    border: 2px solid transparent;
+}
+
 button {
     padding: 10px;
-    width: 180px;
+    width: 200px;
     cursor: pointer;
     font-weight: bold;
-    border: 2px solid #2063f7;
+    border: none;
     background-color: #2063f7;
     color: white;
     border-radius: 10px;
@@ -130,7 +128,6 @@ button {
 
 button:hover {
     background-color: #fe2d4a;
-    border: 2px solid #fe2d4a;
     color: white;
 }
 
@@ -144,4 +141,10 @@ button:hover {
 
 .confirm {
     grid-area: submit;
+}
+
+fieldset {
+    padding: 50px;
+    border: 3px solid white;
+    border-radius: 70px;
 }
